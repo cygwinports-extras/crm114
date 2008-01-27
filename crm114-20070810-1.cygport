@@ -1,0 +1,22 @@
+blame_whom="TheSegfault"
+
+DESCRIPTION="Controllable Regex Mutilator"
+HOMEPAGE="http://crm114.sourceforge.net/wiki/"
+SRC_URI="http://crm114.sourceforge.net/tarballs/${P}-Blame${blame_whom}.src.tar.gz"
+SRC_DIR="${P}-Blame${blame_whom}.src"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake LDFLAGS= 
+}
+
+src_install() {
+	cd ${B}
+	dodir /usr/bin /usr/share/emacs/site-lisp
+	USE_DESTDIR=0 cyginstall
+	dodoc *.txt
+
+	insinto /usr/share/${PN}
+	doins *.crm *.cf *.mfp
+}

@@ -1,0 +1,9 @@
+category: Interpreters Mail
+requires: cygwin libtre4
+sdesc: "Controllable Regex Mutilator"
+ldesc: "CRM114 is a system to examine incoming e-mail, system log 
+streams, data files or other data streams, and to sort, filter, or 
+alter the incoming files or data streams according to the user's 
+wildest desires. Criteria for categorization of data can be by 
+satisfaction of regexes, by sparse binary polynomial matching with a 
+Bayesian Chain Rule evaluator, or by other means."

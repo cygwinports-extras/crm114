@@ -1,0 +1,147 @@
+crm114
+------------------------------------------
+CRM114 is a system to examine incoming e-mail, system log streams, data 
+files or other data streams, and to sort, filter, or alter the incoming 
+files or data streams according to the user's wildest desires. Criteria 
+for categorization of data can be by satisfaction of regexes, by sparse 
+binary polynomial matching with a Bayesian Chain Rule evaluator, or by 
+other means.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  libtre4-0.7.5-2
+
+Build requirements:
+(besides corresponding devel packages)
+  binutils-20050610-1
+  cygport-0.3.7-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical homepage:
+  http://crm114.sourceforge.net/wiki/
+
+Canonical download:
+  http://downloads.sourceforge.net/crm114/
+
+------------------------------------
+
+Build instructions:
+  unpack crm114-20070810-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./crm114-20070810-1.cygport all
+
+This will create:
+  /usr/src/crm114-20070810-1-src.tar.bz2
+  /usr/src/crm114-20070810-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/crm.exe
+  /usr/bin/cssdiff.exe
+  /usr/bin/cssmerge.exe
+  /usr/bin/cssutil.exe
+  /usr/bin/osbf-util.exe
+  /usr/share/crm114/aliustest.crm
+  /usr/share/crm114/approxtest.crm
+  /usr/share/crm114/argtest.crm
+  /usr/share/crm114/backwardstest.crm
+  /usr/share/crm114/beeptest.crm
+  /usr/share/crm114/blacklist.mfp
+  /usr/share/crm114/bracktest.crm
+  /usr/share/crm114/calc.crm
+  /usr/share/crm114/call_return_test.crm
+  /usr/share/crm114/classifymail.crm
+  /usr/share/crm114/classifytest.crm
+  /usr/share/crm114/defaulttest.crm
+  /usr/share/crm114/escapetest.crm
+  /usr/share/crm114/eval_infiniteloop.crm
+  /usr/share/crm114/exectest.crm
+  /usr/share/crm114/fataltraptest.crm
+  /usr/share/crm114/gatlingsort.crm
+  /usr/share/crm114/indirecttest.crm
+  /usr/share/crm114/inserttest_a.crm
+  /usr/share/crm114/inserttest_b.crm
+  /usr/share/crm114/inserttest_c.crm
+  /usr/share/crm114/isolate_reclaim_test.crm
+  /usr/share/crm114/learntest.crm
+  /usr/share/crm114/mailfilter.cf
+  /usr/share/crm114/mailfilter.crm
+  /usr/share/crm114/maillib.crm
+  /usr/share/crm114/mailreaver.crm
+  /usr/share/crm114/mailtrainer.crm
+  /usr/share/crm114/match_isolate_reclaim.crm
+  /usr/share/crm114/match_isolate_test.crm
+  /usr/share/crm114/matchtest.crm
+  /usr/share/crm114/mathalgtest.crm
+  /usr/share/crm114/mathrpntest.crm
+  /usr/share/crm114/nestaliustest.crm
+  /usr/share/crm114/overalterisolatedtest.crm
+  /usr/share/crm114/pad.crm
+  /usr/share/crm114/paolo_ov2.crm
+  /usr/share/crm114/paolo_ov3.crm
+  /usr/share/crm114/paolo_ov4.crm
+  /usr/share/crm114/paolo_ov5.crm
+  /usr/share/crm114/paolo_overvars.crm
+  /usr/share/crm114/priolist.mfp
+  /usr/share/crm114/quine.crm
+  /usr/share/crm114/randomiotest.crm
+  /usr/share/crm114/rewrites.mfp
+  /usr/share/crm114/rewritetest.crm
+  /usr/share/crm114/rewriteutil.crm
+  /usr/share/crm114/shroud.crm
+  /usr/share/crm114/shuffle.crm
+  /usr/share/crm114/skudtest.crm
+  /usr/share/crm114/statustest.crm
+  /usr/share/crm114/tenfold_validate.crm
+  /usr/share/crm114/test_rewrites.mfp
+  /usr/share/crm114/test_svm.crm
+  /usr/share/crm114/translate_tr.crm
+  /usr/share/crm114/traptest.crm
+  /usr/share/crm114/uncaughttraptest.crm
+  /usr/share/crm114/unionintersecttest.crm
+  /usr/share/crm114/whitelist.mfp
+  /usr/share/crm114/windowtest.crm
+  /usr/share/crm114/windowtest_fromvar.crm
+  /usr/share/crm114/zz_translate_test.crm
+  /usr/share/doc/crm114-20070810/COLOPHON.txt
+  /usr/share/doc/crm114-20070810/CRM114_Mailfilter_HOWTO.txt
+  /usr/share/doc/crm114-20070810/FAQ.txt
+  /usr/share/doc/crm114-20070810/GPL-License.txt
+  /usr/share/doc/crm114-20070810/INTRO.txt
+  /usr/share/doc/crm114-20070810/QUICKREF.txt
+  /usr/share/doc/crm114-20070810/README
+  /usr/share/doc/crm114-20070810/classify_details.txt
+  /usr/share/doc/crm114-20070810/inoc_passwd.txt
+  /usr/share/doc/crm114-20070810/knownbugs.txt
+  /usr/share/doc/crm114-20070810/things_to_do.txt
+  /usr/share/emacs/site-lisp/crm114-mode.el
+
+------------------
+
+Port Notes:
+
+----- version 20070810-1 -----
+Version bump.
+
+----- version 20050721-1 -----
+Sync with upstream "bleeding edge" version.
+
+----- version 20040328-1 -----
+21 April 2004.  New upstream test release.
+
+Numerous changes included since the last version, but I don't have an 
+upstream ChangeLog to base it on.  Sorry :-/  See the README file for 
+the newest features in this version over the last upstream version 
+(several of which were missed).
+
+----- version 20040212-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
