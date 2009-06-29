@@ -1,5 +1,5 @@
 category: Interpreters Mail
-requires: cygwin libtre4
+requires: libtre4
 sdesc: "Controllable Regex Mutilator"
 ldesc: "CRM114 is a system to examine incoming e-mail, system log 
 streams, data files or other data streams, and to sort, filter, or 
